@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A6093EB1F25F88600EC83B0 /* Localizes.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A6093ED1F25F88600EC83B0 /* Localizes.strings */; };
 		2A6CD9731F32C03300F858C5 /* LJCPlus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6CD9711F32C03300F858C5 /* LJCPlus.cpp */; };
+		2A6F53501F417F01005DAD31 /* LJFileOperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6F534E1F417F01005DAD31 /* LJFileOperation.cpp */; };
 		2A77FE011F21FBF50039C36E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A77FE001F21FBF50039C36E /* main.m */; };
 		2A77FE041F21FBF50039C36E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A77FE031F21FBF50039C36E /* AppDelegate.m */; };
 		2A77FE071F21FBF60039C36E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A77FE061F21FBF60039C36E /* ViewController.m */; };
@@ -44,6 +45,9 @@
 		2A6093EF1F25F88800EC83B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizes.strings"; sourceTree = "<group>"; };
 		2A6CD9711F32C03300F858C5 /* LJCPlus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LJCPlus.cpp; sourceTree = "<group>"; };
 		2A6CD9721F32C03300F858C5 /* LJCPlus.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LJCPlus.hpp; sourceTree = "<group>"; };
+		2A6F534E1F417F01005DAD31 /* LJFileOperation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LJFileOperation.cpp; sourceTree = "<group>"; };
+		2A6F534F1F417F01005DAD31 /* LJFileOperation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LJFileOperation.hpp; sourceTree = "<group>"; };
+		2A6F53511F4187B0005DAD31 /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
 		2A77FDFC1F21FBF50039C36E /* MutableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MutableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A77FE001F21FBF50039C36E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2A77FE021F21FBF50039C36E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +139,9 @@
 				2A8D5A791F21FE7B00F9BCD2 /* NSMutableDictionary+Extends.m */,
 				2A6CD9721F32C03300F858C5 /* LJCPlus.hpp */,
 				2A6CD9711F32C03300F858C5 /* LJCPlus.cpp */,
+				2A6F534F1F417F01005DAD31 /* LJFileOperation.hpp */,
+				2A6F534E1F417F01005DAD31 /* LJFileOperation.cpp */,
+				2A6F53511F4187B0005DAD31 /* file.txt */,
 				2A77FE081F21FBF60039C36E /* Main.storyboard */,
 				2A77FE0B1F21FBF60039C36E /* Assets.xcassets */,
 				2A77FE0D1F21FBF60039C36E /* LaunchScreen.storyboard */,
@@ -381,6 +388,7 @@
 				2A77FE011F21FBF50039C36E /* main.m in Sources */,
 				2A6CD9731F32C03300F858C5 /* LJCPlus.cpp in Sources */,
 				2A8D5A7B1F21FE7B00F9BCD2 /* NSMutableDictionary+Extends.m in Sources */,
+				2A6F53501F417F01005DAD31 /* LJFileOperation.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

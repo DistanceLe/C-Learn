@@ -187,10 +187,20 @@ void printBook(struct Books book){
     cout << "BookID:  " << book.bookID << endl;
 }
 
+class FriendClass{
+private:
+    int people;
+    void getFriend(){
+        cout << "friend Class" << endl;
+    }
+};
 
 /**  类 */
 class Box{
    
+    /**  声明 FriendClass 为 Box的友元类 */
+    friend class FriendClass;
+    
     //保护的  成员函数 和 子类  可以访问
 protected:
     double area;
@@ -271,9 +281,22 @@ public:
 
 class Shape{
 public:
+    int len;
     void getShape(void){
         cout << "your shape is Rectangle" << endl;
     }
+    
+    /**  多态 */
+    //加上virtual后，派生类中的相同函数，就不会调用父类的方法。
+    //这种操作称为 动态链接，或后期绑定
+    //静态链接，表示函数在编译期间就已经设置好了，也叫早绑定，静态多态、就会直接调用父类的方法，而忽略子类方法
+    virtual double area(double len, double width){
+        return len * width;
+    }
+    
+    //纯虚函数， 没有主体的虚函数  = 0 告诉编译器，函数没有主体。
+    //有一个纯虚函数 就是抽象类。
+    virtual double area() = 0;
 };
 
 
@@ -281,6 +304,22 @@ public:
 class MultiClass: public Box, public Shape{
     string getName(){
         return "Multi Class";
+    }
+    
+    /**  多态，重写父类方法 */
+    double area(){
+        cout << "这个是 子类函数的area" << endl;
+        return len*0.8;
+    }
+    
+    
+    //重载，
+    //1. 函数重载， 参数必须不同
+    //2. 运算符重载。
+    MultiClass operator+(const MultiClass& s){
+        MultiClass shape;
+        shape.len = this->len + s.len;
+        return shape;
     }
 };
 

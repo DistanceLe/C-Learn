@@ -11,6 +11,9 @@
 
 
 #import "LJCPlus.hpp"
+#import "LJFileOperation.hpp"
+
+#include <fstream>
 
 @interface ViewController ()
 
@@ -37,11 +40,22 @@
 
 /**   调用C++ 代码 */
 -(void)helloCPuls{
-    hello();
+    //hello();
     
     
+    operatorFile();
     
-    
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *documentsDirectory = [paths objectAtIndex:0];
+//    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"file1.txt"];
+//    
+//    std::fstream fout([path UTF8String]);
+//    
+//    if (fout) {
+//        NSLog(@"创建文件 file.txt");
+//    }else{
+//        NSLog(@"创建文件 file.txt  失败");
+//    }
 }
 
 
