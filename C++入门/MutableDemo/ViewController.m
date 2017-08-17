@@ -11,7 +11,6 @@
 
 
 #import "LJCPlus.hpp"
-#import "LJFileOperation.hpp"
 
 #include <fstream>
 
@@ -43,7 +42,9 @@
     //hello();
     
     
-    operatorFile();
+//    operatorFile();
+    
+    memoryFunc();
     
 //    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 //    NSString *documentsDirectory = [paths objectAtIndex:0];

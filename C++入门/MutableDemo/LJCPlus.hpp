@@ -15,6 +15,7 @@
 
 
 int hello();
-
+void operatorFile();
+void memoryFunc();
 
 #endif /* LJCPlus_hpp */
