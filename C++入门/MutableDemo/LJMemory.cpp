@@ -44,7 +44,9 @@ public:
 
 
 
-/**  模板， 泛型 */
+/**  模板， 泛型  
+    const& 表示传递的是常量，不能被修改，
+    同时& 表示值引用，减少数值传递过程中的时间 */
 template <typename E>
 inline E const& Max(E const& a, E const& b){
     return a<b ? b : a;
